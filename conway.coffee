@@ -1,5 +1,8 @@
-jQuery ->
+
+
+$ ->
 	initBoard(20, 20)
+	$("tr td").click(() -> $(this).toggleClass("toggled"))
 
 initBoard = (row, col) ->
 	boardArea = Constants.boardAreaElement()

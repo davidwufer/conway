@@ -2,8 +2,11 @@
 (function() {
   var Board, Cell, Constants, initBoard;
 
-  jQuery(function() {
-    return initBoard(20, 20);
+  $(function() {
+    initBoard(20, 20);
+    return $("tr td").click(function() {
+      return $(this).toggleClass("toggled");
+    });
   });
 
   initBoard = function(row, col) {

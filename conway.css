@@ -1,6 +1,6 @@
 #board-area {
 	background-color:#eee;         
-	border:1px solid  #666666;   
+	border:3px solid  #aaaaaa;   
 	width: 500px;      
 	height: 500px;
 }
@@ -16,5 +16,3 @@ td {
 header {
 	font-size: 2em;
 }
-
-

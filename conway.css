@@ -1,12 +1,16 @@
 #board-area {
 	background-color:#eee;         
 	border:3px solid  #aaaaaa;   
-	width: 500px;      
-	height: 500px;
+	width: 250px;      
+	height: 250px;
 }
 
 td {
 	background-color: #ffffff;
+}
+
+#container {
+	width: 250px;
 }
 
 .toggled {
@@ -15,4 +19,8 @@ td {
 
 header {
 	font-size: 2em;
+}
+
+button {
+	float: right;
 }

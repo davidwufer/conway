@@ -1,13 +1,18 @@
-
-
 $ ->
-	initBoard(20, 20)
-	$("tr td").click(() -> $(this).toggleClass("toggled"))
+	board = new Board(5, 5)
 
-initBoard = (row, col) ->
+	initBoard(board)
+	$("tr td").click(toggleCells)
+
+toggleCells = () ->
+	elems = $(this)
+	elems.toggleClass("toggled")
+	console.log(elems)
+	# board.toggle
+
+initBoard = (board) ->
 	boardArea = Constants.boardAreaElement()
 
-	board = new Board(row, col)
 	for row in [0...board.rows]
 		newRow = jQuery('<tr>', {
 				id: "row-" + row,
@@ -42,8 +47,15 @@ class Board
 		@board = []
 		Board._init(@board, @rows, @cols)
 
+	toggleCell: (row, col) ->
+		getCell(row, col).toggle()
+
 	getCell: (row, col) ->
 		@board[row][col]
+
+	getCellsToToggle: () ->
+		#blah
+
 
 
 class Cell
@@ -57,4 +69,4 @@ class Cell
 		$(div)
 
 	getCellName: () ->
-		"cell-" + @row + "-" + @col
+		["cell", @row, @col].join("-")

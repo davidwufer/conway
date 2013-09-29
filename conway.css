@@ -1,7 +1,7 @@
 #board-area {
-	background-color:#eee;         
-	border:3px solid  #aaaaaa;   
-	width: 250px;      
+	background-color:#eee;
+	border:3px solid  #aaaaaa;
+	width: 250px;
 	height: 250px;
 }
 
@@ -10,14 +10,16 @@ td {
 }
 
 #container {
+	margin: auto;
 	width: 250px;
 }
 
-.toggled {
-	background-color: #000000;	
+.live {
+	background-color: #000000;
 }
 
 header {
+	text-align: center;
 	font-size: 2em;
 }
 

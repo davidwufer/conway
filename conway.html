@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<script src="jquery-2.0.3.min.js"></script>
+		<script src="underscore-min.js"></script>
 		<script src="conway.js"></script>
 	    <link rel="stylesheet" type="text/css" href="conway.css"/>
 	    <title>Game of Life</title>
@@ -10,7 +11,12 @@
 		<div id="container">
 			<header>Game of Life</header>
 			<table id="board-area"></table>
-			<button>Next iteration</button>
+			<button>
+				<div class="clear">Clear</div>
+			</button>
+			<button>
+				<div class="next">Next iteration</div>
+			</button>
 		</div>
 	</body>
 </html>

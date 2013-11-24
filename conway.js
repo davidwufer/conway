@@ -4,7 +4,7 @@
 
   $(function() {
     var board;
-    board = new Board(3, 3);
+    board = new Board(5, 5);
     initBoard(board);
     $("tr td").click(function() {
       return toggleCells($(this), board);

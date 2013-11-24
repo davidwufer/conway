@@ -1,5 +1,5 @@
 $ ->
-  board = new Board(3, 3)
+  board = new Board(5, 5)
 
   initBoard(board)
 
